@@ -13,8 +13,7 @@ pipeline {
                     ls -la
                     npm --version
                     node --version
-                    cat package-lock.json
-                    npm install
+                    npm ci --force
                     npm run build
                     ls -la
                     git checkout -B 'tempbranch'
