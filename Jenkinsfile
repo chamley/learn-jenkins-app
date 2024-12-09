@@ -16,6 +16,7 @@ pipeline {
                     npm install
                     npm run build
                     ls -la
+                    cat package-lock.json
                     git checkout -B 'tempbranch'
                     git status
                     touch hello.txt
