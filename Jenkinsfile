@@ -27,6 +27,7 @@ pipeline {
                         '''
                     } catch (Exception e) {
                         echo 'Exception occured' + e.toString()
+                        sh "ls -la"
                         sh "cat /home/node/.npm/_logs/2024-12-09T14_32_01_358Z-debug-0.log"
                     }
                 }
