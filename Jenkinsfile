@@ -13,10 +13,10 @@ pipeline {
                     ls -la
                     npm --version
                     node --version
+                    cat package-lock.json
                     npm install
                     npm run build
                     ls -la
-                    cat package-lock.json
                     git checkout -B 'tempbranch'
                     git status
                     touch hello.txt
